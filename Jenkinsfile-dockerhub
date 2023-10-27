@@ -5,8 +5,8 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('Emmanuel-Dockerhub')
-    APP_NAME = "ekamenin/demo-app-repo12"
+    DOCKERHUB_CREDENTIALS = credentials('kameni-dockerhub')
+    APP_NAME = "ekamenin/amazon"
     }
     stages { 
         stage('SCM Checkout') {
